@@ -28,7 +28,12 @@ import androidx.navigation.Navigation
 import com.android.example.cameraxbasic.R
 
 private const val PERMISSIONS_REQUEST_CODE = 10
-private val PERMISSIONS_REQUIRED = arrayOf(Manifest.permission.CAMERA)
+private val PERMISSIONS_REQUIRED = arrayOf(
+    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+    Manifest.permission.READ_EXTERNAL_STORAGE,
+    Manifest.permission.RECORD_AUDIO,
+    Manifest.permission.CAMERA,
+)
 
 /**
  * The sole purpose of this fragment is to request permissions and, once granted, display the
