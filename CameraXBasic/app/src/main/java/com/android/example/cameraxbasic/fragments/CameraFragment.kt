@@ -341,8 +341,8 @@ class CameraFragment : Fragment() {
                 this, cameraSelector,
                 preview,
                 imageCapture,
-                //imageAnalyzer,
-                videoCapture,
+//                imageAnalyzer,
+               videoCapture,
             )
 
             // Attach the viewfinder's surface provider to preview use case

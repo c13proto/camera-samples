@@ -17,8 +17,10 @@
 <navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/permissions_fragment">
+<!--    app:startDestination="@id/test_fragment">-->
 
     <fragment
         android:id="@+id/permissions_fragment"
@@ -57,6 +59,15 @@
         <argument
             android:name="root_directory"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/test_fragment"
+        android:name="com.android.example.cameraxbasic.fragments.TestFragment"
+        android:label="TestFragment">
+        <action
+            android:id="@+id/action_test_fragment_to_permissions_fragment"
+            app:destination="@id/permissions_fragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
 </navigation>
